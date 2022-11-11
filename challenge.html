@@ -8,33 +8,45 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style="position:fixed;margin-left: 40%;">CONTACT BOOK</h1>
+    <h1 style="position:absolute;margin-left: 40%;">STORE APP</h1>
     <div class="content">
-    <h1>BOOK</h1>
+    <h1>PRODUCTS</h1>
     </div>
     <form method="post">
     <div class="box">
-    <h1>ADD CONTACT</h1>
-    <label>UserName</label><br>
-    <input type="text" class="name" name="name" required><br>
-    <label> Email</label><br>
-    <input type="text" class="email" name="email" required><br>
-    <label>Address</label><br>
-    <input type="text" class="address" name="address" required><br>
-    <label>Phone Number</label><br>
-    <input type="text" class="phone" name="phone" required><br>
+    <h1>ADD PRODUCT</h1>
+    <label>Title</label><br>
+    <input type="text" class="name" name="titles" required><br>
+    <label> Description</label><br>
+    <input type="text" class="email" name="description" required><br>
+    <label>Price (USD)</label><br>
+    <input type="number" class="myNumber" name="price">
+    <label>Category </label><br>
+    <select class="categories" name="categories">
+        <option value="none" selected>None</option>
+        <option value="Drinks">Drinks</option>
+        <option value="Fresh">Fresh</option>
+        <option value="Bakery">Bakery</option>
+      </select>
+      <label>Amount Available</label><br>
+    <input type="number" class="available" name="availability">
+    <label>Uploaded on</label><br>
+    <input type="date" name="date" class="date">
+    <input type="file" name="image" id="img">
     <button type="submit">ADD</button>
     </div>
     <div class="allcontainer">
     <div class="all">
-    <p class="label">UserName</p>
-    <p class="username data"></p>
-    <p class="label">Email</p>
-    <p class="useremail data"></p>
-    <p class="label">Address</p>
-    <p class="useraddress data"></p>
-    <p class="label">Phone Number</p>
-    <p class="usernumber data"> </p>
+    <div class="image"></div>
+    <p class="title data" style="text-align: center;font-weight:bold;font-size: x-large;"></p>
+    <p class="description data" ></p>
+    <p class="label">Category:</p>
+    <span class="category data" style="font-size: 15px;"> </span>
+    <p class="label" style="text-align:center;">Price</p>
+    <center><span class="price data" style="font-size:50px;font-weight: bold;color: #f8af5b;"></span>
+    </center>
+    <p class="availability data" style="text-align:center; font-size:16px;"></p>
+    <p class="dates data" style="font-size: 12px; text-align: center;"> </p>
     <button class="cancel">CANCEL</button>
 
 

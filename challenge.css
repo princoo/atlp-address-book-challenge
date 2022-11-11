@@ -60,15 +60,16 @@ button{
 }
 .all{
 background-color: rgb(247, 240, 240);
-width: 30%;
+width: 40%;
 float: left;
-margin-left: 40%;
-margin-top: 12%;
+margin-left: 30%;
+margin-top: 5%;
 border: 0.7px solid ;
 margin-bottom: 10px;
 border-radius: 7px;
-position: fixed;
+position: absolute;
 box-shadow: 5px 8px 10px #888888;
+/* padding-top: 20%; */
 
 }
 .allcontainer{
@@ -83,13 +84,14 @@ box-shadow: 5px 8px 10px #888888;
     margin: 10% 30px 10px 30px;
 }
 .data{
-    text-align: center;
+    margin-left: 5%;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
 font-size: larger;
 }
 .label{
-    text-align: center;
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .names:hover{
@@ -97,5 +99,22 @@ font-size: larger;
     background-color: #baf35d;
 }
 .cancel{
+margin-left: 43%;
 margin-bottom: 10px;
+}
+.categories, .myNumber, .available, .date{
+    width: 100%;
+    padding: 6px ;
+    margin: 8px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+
+.img{
+    margin: 5% 20% 0% 20%;
+    height: 30%;
+    width: 60%;
+    box-shadow: 5px 8px 10px #888888;
+
 }
